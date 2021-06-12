@@ -161,3 +161,35 @@ h3 {
 .header {
   margin-bottom: 0.9em;
 }
+
+@media screen and (max-width: 1680px) {
+  #introP {
+    margin: 0 300px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #introP {
+    margin: 0 200px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #introP {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 100px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #introP {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 50px;
+    margin-bottom: 50px;
+  }
+}
