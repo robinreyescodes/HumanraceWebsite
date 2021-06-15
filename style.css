@@ -8,6 +8,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.home {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+li {
+  cursor: pointer;
+}
 
 /* nav bar styles */
 .nav {
@@ -17,9 +26,27 @@ body {
   justify-content: space-between;
   font-size: 1em;
   font-weight: 50px;
-  background-color: white;
   height: 69px;
+  background-color: white;
 }
+
+.aboutInfo {
+  background-color: white;
+  width: 100%;
+  height: 8em;
+}
+.aboutInfo p {
+  margin-right: 700px;
+  margin-left: 30px;
+}
+.hidden {
+  display: none;
+}
+/*  
+.show {
+  display: block;
+  background-color: white;
+} */
 
 h3 {
   position: absolute;
@@ -74,11 +101,9 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* or 3d alternative if you will add animations (smoother transitions) */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Other styling stuff */
 
   color: white;
 
@@ -115,7 +140,7 @@ h3 {
 }
 
 .routineSection div {
-  margin-left: 2em;
+  margin-left: 3em;
 }
 
 .pharell1 {
@@ -124,9 +149,13 @@ h3 {
 }
 
 .threepiece {
-  width: 95%;
+  width: 90%;
   height: 80%;
   margin-bottom: 2rem;
+}
+
+#routinePackInfo {
+  height: 100px;
 }
 
 #routinePackInfo li {
@@ -136,9 +165,10 @@ h3 {
 }
 
 .foot {
-  margin-top: 20px;
+  margin-top: 200px;
   padding: 40px;
-  height: 32vh;
+  height: auto;
+  width: auto;
   background-color: rgba(220, 220, 220, 0.178);
   font-weight: 400;
 }
@@ -191,5 +221,61 @@ h3 {
     font-size: 1rem;
     margin: 0 50px;
     margin-bottom: 50px;
+  }
+
+  .pharell1 {
+    height: 100%;
+    width: 100%;
+  }
+
+  .routineSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #routinePackInfo {
+    font-size: 0.8em;
+  }
+
+  #home-image {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .logo {
+    font-size: 4em;
+  }
+
+  .humanLogo {
+    font-size: 0.9em;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .threepiece {
+    width: 100%;
+    height: 96%;
+  }
+
+  .routineSection div {
+    margin-left: 0em;
+  }
+
+  .links {
+    display: grid;
+    gap: 20px;
+  }
+
+  #skincare {
+    position: absolute;
+    bottom: 1%;
+    font-size: 0.9em;
   }
 }

@@ -8,26 +8,35 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section id="home">
+    <section class="home">
       <header class="nav">
         <ul class="list" id="list-left">
           <li class="green-font">Skincare</li>
           <li>Wellbeings</li>
-          <li>About Humanrace</li>
+          <li class="aboutHumans">About Humanrace</li>
         </ul>
-        <h3 class="">Humanrace</h3>
+        <h3 class="humanLogo">Humanrace</h3>
         <ul class="list" id="list-right">
           <li>Account</li>
           <li>Bag</li>
           <span class="num">0</span>
         </ul>
       </header>
-      <div>
-        <h4 id="skincare">Humanrace<span>&#174;</span> Skincare</h4>
-        <img id="home-image" src="images/humanracefront.jpg" />
-        <h2 class="logo">Humanrace</h2>
+      <div class="aboutInfo hidden">
+        <p>
+          Humanrace is a product company founded by Pharrell Williams with a
+          mission to empower all people in their pursuit of wellbeing. Guided by
+          experiences from his own wellness journey, Pharrell created Humanrace
+          in the belief that taking better care of ourselves can teach us to
+          take better care of each other.
+        </p>
       </div>
     </section>
+    <div>
+      <h4 id="skincare">Humanrace<span>&#174;</span> Skincare</h4>
+      <img id="home-image" src="images/humanracefront.jpg" />
+      <h2 class="logo">Humanrace</h2>
+    </div>
     <section id="second">
       <p id="introP">
         Humanrace Skincare is a collection of all-gender skincare products
@@ -81,5 +90,6 @@
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
